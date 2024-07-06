@@ -23,6 +23,7 @@ This repository contains a Python script for a system surveillance tool using a 
    cd System-Surveillance-using-Keylogger
 3. Run the script:
    ```bash
+   python keylogger.py
 
 ## Usage
 - Modify the script to customize logging behavior or enhance functionality based on specific requirements.
