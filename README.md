@@ -9,22 +9,35 @@ This repository contains a Python script for a system surveillance tool using a 
 
 ## Features
 
-- **Keystroke Logging**: Records keystrokes made on the system.
-- **Log Storage**: Saves logs to a text file for easy access and monitoring.
-- **Stealth Mode**: Operates in a hidden mode to avoid detection.
+- Keylogging functionality to record keystrokes
+- Email notification system for immediate alerts
+- Designed and implemented entirely in Python
+- Provides insights into unauthorized system usage
+- Enhances system security and identifies potential threats
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/amanmaner011/System-Surveillance-using-Keylogger.git
+    ```bash
+    git clone https://github.com/amanmaner011/System-Surveillance-using-Keylogger.git
+    ```
 2. Navigate to the project directory:
-   ```bash
-   cd System-Surveillance-using-Keylogger
-3. Run the script:
-   ```bash
-   python keylogger.py
+    ```bash
+    cd System-Surveillance-using-Keylogger/src
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install pynput smtplib
+    ```
 
 ## Usage
-- Modify the script to customize logging behavior or enhance functionality based on specific requirements.
-- Ensure compliance with local laws and regulations regarding monitoring and privacy.
+
+1. Open `src/execute_keylogger.py` and update the email and password fields:
+    ```python
+    malicious_keylogger: keylogger.KeyLogger = keylogger.KeyLogger(60, 'your-email@gmail.com', 'your-email-password')
+    ```
+2. To start the keylogger, run the following command:
+    ```bash
+    python src/execute_keylogger.py
+    ```
+3. The keylogger will start recording keystrokes and send email notifications as configured.
